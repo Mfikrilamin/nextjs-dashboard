@@ -98,7 +98,7 @@ export async function updateInvoice(
   }
 
   revalidatePath('/dashboard/invoices');
-  redirect('/dashboard/invoices');
+  redirect('/dashboard/invoices'); //Redirect function
 }
 
 export async function deleteInvoice(id: string) {
@@ -132,4 +132,7 @@ export async function authenticate(
     }
     throw error;
   }
+}
+export async function throwError() {
+  throw new Error('This is a test error');
 }

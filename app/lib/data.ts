@@ -61,6 +61,7 @@ export async function fetchLatestInvoices() {
 export async function fetchCardData() {
   noStore();
   try {
+    // throw new Error('Database Error: Connection failed');
     // Artificially delay a response for demo purposes.
     // Don't do this in production :)
     console.log('Fetching revenue data...');
